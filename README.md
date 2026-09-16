@@ -1,24 +1,24 @@
 #                    研一深度学习入门指南
 
-​												（时间：2026年9月13日 - 至今，宋璞、吴水珍）
+​												（V1.0.1: Date：2026年9月13日）
 
 ### 一、环境的搭建
 
 **（1）系统环境**
 
-​        深度学习的环境分为windows系统和linux系统。
+​        深度学习的环境分为windows系统和linux系统或者MacOS都行,但是推荐在支持cuda的独立显卡的设备上进行调试。
 
-​        如果在自己的电脑上跑，一般采用windows本地开发 + GPU服务器训练。没有服务器也可以先用CPU跑通流程。
+​        如果在自己的电脑上跑，一般采用windows本地开发 + GPU服务器训练。没有服务器也可以先用CPU跑通模型调试流程。
 
-​        若在云服务器（AutoDL）上跑，需要使用linux系统，需要熟悉Linux命令行。
+​        若在云服务器（AutoDL）上使用linux系统训练，需要熟悉简单的Linux命令行操作(需要了解基础的Linux知识)。
 
 **（2）软件清单**
 
-- 推荐使用Visual Studio Code，代码编辑、终端与调试。
+- 推荐使用 VSCode 或者 PyCharm ，进行项目代码的编辑与调试。
 - Git：拉取、保存与提交代码。
 - Miniconda或Anaconda或UV：管理Python虚拟环境。
-- Jupyter：
-- Python、PyTorch、TorchVision。
+- Jupyter：编写一些测试脚本,以及跑通一些项目的Demo
+- Python,PyTorch,OpenCV,Numpy以及一些python基本库。
 - 安装参考教程（有问题，问AI）：[深度学习环境配置超详细教程【Anaconda+PyTorch(GPU版)+CUDA+cuDNN】-CSDN博客](https://blog.csdn.net/qq_43874102/article/details/123164105)
 - [ 【深度学习环境配置】Anaconda + PyCharm + CUDA + cuDNN + PyTorch + OpenCV_anaconda安装opencv-CSDN博客](https://blog.csdn.net/shinuone/article/details/129054444?spm=1001.2101.3001.6650.16&utm_medium=distribute.pc_relevant.none-task-blog-2~default~ElasticSearch~Rate-16-129054444-blog-123164105.235^v43^pc_blog_bottom_relevance_base8&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~ElasticSearch~Rate-16-129054444-blog-123164105.235^v43^pc_blog_bottom_relevance_base8&utm_relevant_index=27)
 
@@ -37,11 +37,11 @@
 	- 《pytorch深度学习实战》实战书籍优先完成张量、自动微分、训练分类模型和可视化相关章节
 	- 《nndl-book》理论书籍优先阅读基础模型和优化相关章节。
 
-（2）
+（2）视觉大模型微调(SAM & DINO)
 
 
 
-### 三、动手跑项目
+### 三、动手跑项目(图像分类到语义分割)
 
 （1）第一个任务建议为 MNIST 手写数字分类
 
@@ -56,6 +56,14 @@
 
 
 （2）第二个任务再进入 CIFAR-10 与 CNN
+
+
+
+（3）动手搭建一个UNet进行图像分割
+
+
+
+（4）遥感图像语义分割
 
 
 
